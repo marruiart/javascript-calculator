@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    width: 99%;
+    height: 100vw;
+    background: linear-gradient(170deg, #51BFB3 100px, #C6E0D4 350px, #FCF8DB 580px, #FCF8DB 620px, #FBE2AB 750px, #E25507 1300px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#calculadora {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0px auto;
+    padding: 50px;
+    color: #1d4440;
+    font-size: 50px;
+}
+
+.filas {
+    margin: 1px 0;
+}
+
+#ultimaFila {
+    margin-bottom: 20px;
+}
+
+button, .operar {
+    background-color: #ff6d1e;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 7px;
+    margin: 2px;
+}
+
+#screen {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #bdbdbd;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: right;
+    padding: 15px 10px 15px 10px;
+    width: 235px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#memoryText {
+    float: left;
+    font-size: 15px;
+    height: 18px;
+    min-height: 18px;
+}
+
+#secScreenText {
+    display: inline-block;
+    font-size: 15px;
+    height: 18px;
+    min-height: 18px;
+}
+
+#screenText {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    height: 30px;
+    min-height: 30px;
+}
+
+.botonLargo {
+    width: 80px;
+    background-color: #ffc400;
+    color: black;
+    height: 37px;
+}
+
+.botonCorto, .numero, .operar, .igualar {
+    width: 45px;
+}
+
+.igualar {
+    background-color: #e4e4e4;
+    color: black;
+}
+
+.numero {
+    background-color: #bebebe;
+    color: black;
+}

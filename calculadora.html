@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div id="content">
+        <form id="calculadora">
+            <div id="screen">
+                <span id="memoryText"></span>
+                <span id="secScreenText"></span>
+                <span id="screenText">0</span>
+            </div>
+
+            <div class="filas"><button type="button" class="botonLargo" onclick="retro();">⇐</button>
+                <button type="button" class="botonLargo" onclick="borradoParcial();">CE</button>
+                <button type="button" class="botonLargo" onclick="borradoTotal();">C</button>
+            </div>
+            <div class="filas"> <button type="button" class="operar" onclick="memSav();">MS</button>
+                <button type="button" class="operar" onclick="memRem();">MR</button>
+                <button type="button" class="operar" onclick="memMas();">M+</button>
+                <button type="button" class="operar" onclick="memMenos();">M-</button>
+                <button type="button" class="operar" onclick="memCle();">MC</button>
+            </div>
+            <div class="filas"><button type="button" class="operar" onclick="fact();">!</button>
+                <button type="button" class="operar" onclick="numE();">e</button>
+                <button type="button" class="operar" onclick="pi();">π</button>
+                <button type="button" class="operar" onclick="logaritmo();">log</button>
+                <button type="button" class="botonCorto" onclick="ln();">ln</button>
+            </div>
+            <div class="filas"><button type="button" class="numero" onclick="numero('7');">7</button>
+                <button type="button" class="numero" onclick="numero('8');">8</button>
+                <button type="button" class="numero" onclick="numero('9');">9</button>
+                <button type="button" class="operar" onclick="operar('/');">/</button>
+                <button type="button" class="botonCorto" onclick="raizc();">√</button>
+            </div>
+            <div class="filas"><button type="button" class="numero" onclick="numero('4');">4</button>
+                <button type="button" class="numero" onclick="numero('5');">5</button>
+                <button type="button" class="numero" onclick="numero('6');">6</button>
+                <button type="button" class="operar" onclick="operar('*');">x</button>
+                <button type="button" class="botonCorto" onclick="porcent();">%</button>
+            </div>
+            <div class="filas"><button type="button" class="numero" onclick="numero('1');">1</button>
+                <button type="button" class="numero" onclick="numero('2');">2</button>
+                <button type="button" class="numero" onclick="numero('3');">3</button>
+                <button type="button" class="operar" onclick="operar('-');">-</button>
+                <button type="button" class="botonCorto" onclick="inve();">1/x</button>
+            </div>
+            <div id="ultimaFila" class="filas"> <button type="button" class="botonCorto"
+                    onclick="opuest();">+/-</button>
+                <button type="button" class="numero" onclick="numero('0');">0</button>
+                <button type="button" class="numero" onclick="numero('.');">.</button>
+                <button type="button" class="operar" onclick="operar('+');">+</button>
+                <button type="button" class="igualar" onclick="igualar()">=</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
